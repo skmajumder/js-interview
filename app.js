@@ -1,10 +1,7 @@
 function checkTryBlock() {
   try {
-    throw new Error("This is a error");
   } catch (error) {
-    return "Error from catch block";
-  } finally {
-    return "finally block";
+    return "catch block";
   }
 }
 
