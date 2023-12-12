@@ -1,13 +1,16 @@
+const myObject = { a: 1 };
+console.log(myObject.toString());
+
 // * using object as key
 
-const a = {},
-  b = { key: "b" },
-  c = { key: "c" };
+// const a = {},
+//   b = { key: "b" },
+//   c = { key: "c" };
 
-a[b] = 123;
-a[c] = 456;
+// a[b] = 123;
+// a[c] = 456;
 
-console.log(a[b]);
+// console.log(a[b]);
 
 // (function () {
 //   const a = (b = 3);
