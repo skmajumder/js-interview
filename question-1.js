@@ -1,5 +1,15 @@
-const myObject = { a: 1 };
-console.log(myObject.toString());
+function showData() {
+  console.log("Variable name is", name);
+  console.log("Variable name is", age);
+
+  var name = "John";
+  let age = 999;
+}
+
+showData();
+
+// const myObject = { a: 1 };
+// console.log(myObject.toString());
 
 // * using object as key
 
