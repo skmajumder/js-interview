@@ -1,12 +1,20 @@
-function showData() {
-  console.log("Variable name is", name);
-  console.log("Variable name is", age);
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
-  var name = "John";
-  let age = 999;
-}
+// var a = 10;
+// let b = 20;
+// const c = 30;
 
-showData();
+// function showData() {
+//   console.log("Variable name is", name);
+//   console.log("Variable name is", age);
+
+//   var name = "John";
+//   let age = 999;
+// }
+
+// showData();
 
 // const myObject = { a: 1 };
 // console.log(myObject.toString());
