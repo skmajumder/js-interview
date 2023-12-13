@@ -1,13 +1,19 @@
-const code = {
-  type: "web",
-};
+let a = { greeting: "Hi" };
+let z = a;
+z.greeting = "Bye";
 
-const reactJS = {
-  name: "js",
-  web: true,
-};
+console.log(a.greeting);
 
-console.log(reactJS[code.type]);
+// const code = {
+//   type: "web",
+// };
+
+// const reactJS = {
+//   name: "js",
+//   web: true,
+// };
+
+// console.log(reactJS[code.type]);
 
 // console.log(+true);
 // console.log(!"Javascript");
