@@ -1,17 +1,29 @@
-"use strict";
+// function Human(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
 
-function increaseCounter() {
-  if (!increaseCounter.count) {
-    increaseCounter.count = 1;
-  } else {
-    increaseCounter.count++;
-  }
-  console.log(increaseCounter.count);
-}
+// const member = new Human("Jonas", "Schmedtmann");
+// Human.prototype.getFullName = function () {
+//   return this.firstName + " " + this.lastName;
+// };
 
-increaseCounter();
-increaseCounter();
-increaseCounter();
+// console.log(member.getFullName());
+
+// console.log(member.getFullName());
+
+// function increaseCounter() {
+//   if (!increaseCounter.count) {
+//     increaseCounter.count = 1;
+//   } else {
+//     increaseCounter.count++;
+//   }
+//   console.log(increaseCounter.count);
+// }
+
+// increaseCounter();
+// increaseCounter();
+// increaseCounter();
 
 // function showModal() {
 //   console.log(showModal.timeout);
