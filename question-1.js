@@ -1,15 +1,27 @@
-function getSummery(one, two, three, four) {
-  console.log(one);
-  console.log(two);
-  console.log(three);
-  console.log(four)
+function checkAge(data) {
+  if (data === { age: 18 }) {
+    console.log("You are adult");
+  } else if (data == { age: 18 }) {
+    console.log("You are still in adult");
+  } else {
+    console.log("no age specified");
+  }
 }
 
-const firstName = "John";
-const age = 999;
-const country = "US";
+checkAge({ age: 18 });
 
-getSummery`${firstName}, age is ${age}, live in ${country}`;
+// function getSummery(one, two, three, four) {
+//   console.log(one);
+//   console.log(two);
+//   console.log(three);
+//   console.log(four)
+// }
+
+// const firstName = "John";
+// const age = 999;
+// const country = "US";
+
+// getSummery`${firstName}, age is ${age}, live in ${country}`;
 
 // function add(a, b) {
 //   return a + b;
