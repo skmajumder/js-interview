@@ -1,5 +1,10 @@
 let a = { greeting: "Hi" };
-let z = a;
+// let z = a;
+// let z = { ...a };
+// let z = Object.assign({}, a);
+
+// * for nested object structure
+let z = structuredClone(a);
 z.greeting = "Bye";
 
 console.log(a.greeting);
