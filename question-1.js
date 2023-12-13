@@ -1,14 +1,22 @@
-const a = 108;
-const b = new Number(108);
-const c = 108;
+"use strict";
 
-// console.log(typeof a);
-// console.log(typeof b);
-// console.log(typeof c);
 
-console.log(a == b);
-console.log(a === b);
-console.log(b === c);
+// let message;
+// massage = { data: [24] };
+
+// console.log(massage);
+
+// const a = 108;
+// const b = new Number(108);
+// const c = 108;
+
+// // console.log(typeof a);
+// // console.log(typeof b);
+// // console.log(typeof c);
+
+// console.log(a == b);
+// console.log(a === b);
+// console.log(b === c);
 
 // let a = { greeting: "Hi" };
 // // let z = a;
