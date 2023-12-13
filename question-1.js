@@ -1,5 +1,16 @@
+const code = {
+  type: "web",
+};
+
+const reactJS = {
+  name: "js",
+  web: true,
+};
+
+console.log(reactJS[code.type]);
+
 // console.log(+true);
-console.log(!"Javascript");
+// console.log(!"Javascript");
 
 // const income = {
 //   skills: 108,
