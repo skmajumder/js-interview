@@ -1,13 +1,16 @@
-const income = {
-  skills: 108,
-  monthly() {
-    return this.skills * 108;
-  },
-  yearly: () => 888 * this.skills,
-};
+// console.log(+true);
+console.log(!"Javascript");
 
-console.log(income.monthly());
-console.log(income.yearly());
+// const income = {
+//   skills: 108,
+//   monthly() {
+//     return this.skills * 108;
+//   },
+//   yearly: () => 888 * this.skills,
+// };
+
+// console.log(income.monthly());
+// console.log(income.yearly());
 
 // for (var i = 0; i < 4; i++) {
 //   setTimeout(() => console.log(i), 5);
