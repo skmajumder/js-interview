@@ -1,14 +1,20 @@
-function checkAge(data) {
-  if (data === { age: 18 }) {
-    console.log("You are adult");
-  } else if (data == { age: 18 }) {
-    console.log("You are still in adult");
-  } else {
-    console.log("no age specified");
-  }
+function getType(...args) {
+  console.log(typeof args);
 }
 
-checkAge({ age: 18 });
+getType(108, 108, 16);
+
+// function checkAge(data) {
+//   if (data === { age: 18 }) {
+//     console.log("You are adult");
+//   } else if (data == { age: 18 }) {
+//     console.log("You are still in adult");
+//   } else {
+//     console.log("no age specified");
+//   }
+// }
+
+// checkAge({ age: 18 });
 
 // function getSummery(one, two, three, four) {
 //   console.log(one);
