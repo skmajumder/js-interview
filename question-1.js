@@ -1,14 +1,27 @@
 "use strict";
 
-function showModal() {
-  console.log(showModal.timeout);
+function increaseCounter() {
+  if (!increaseCounter.count) {
+    increaseCounter.count = 1;
+  } else {
+    increaseCounter.count++;
+  }
+  console.log(increaseCounter.count);
 }
 
-showModal();
-showModal.timeout = 200;
+increaseCounter();
+increaseCounter();
+increaseCounter();
 
-showModal.timeout = 100;
-showModal();
+// function showModal() {
+//   console.log(showModal.timeout);
+// }
+
+// showModal();
+// showModal.timeout = 200;
+
+// showModal.timeout = 100;
+// showModal();
 
 // let message;
 // massage = { data: [24] };
