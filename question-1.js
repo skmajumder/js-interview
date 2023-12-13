@@ -1,3 +1,14 @@
+function Human(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const MrX = new Human("Mr", "X");
+const Rock = Human("The", "Rock");
+
+console.log(MrX);
+console.log(Rock);
+
 // function Human(firstName, lastName) {
 //   this.firstName = firstName;
 //   this.lastName = lastName;
