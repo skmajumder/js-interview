@@ -1,13 +1,25 @@
-let a = { greeting: "Hi" };
-// let z = a;
-// let z = { ...a };
-// let z = Object.assign({}, a);
+const a = 108;
+const b = new Number(108);
+const c = 108;
 
-// * for nested object structure
-let z = structuredClone(a);
-z.greeting = "Bye";
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(typeof c);
 
-console.log(a.greeting);
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+// let a = { greeting: "Hi" };
+// // let z = a;
+// // let z = { ...a };
+// // let z = Object.assign({}, a);
+
+// // * for nested object structure
+// let z = structuredClone(a);
+// z.greeting = "Bye";
+
+// console.log(a.greeting);
 
 // const code = {
 //   type: "web",
