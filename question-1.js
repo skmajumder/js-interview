@@ -1,8 +1,124 @@
-function getType(...args) {
-  console.log(typeof args);
-}
+"use strict";
 
-getType(108, 108, 16);
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 5, d: 6 };
+
+const newObj = Object.assign(obj1, obj2);
+// const newObj = { ...obj1, ...obj2 };
+
+console.log(obj1 === newObj);
+
+// const person = {
+//   personName: "John",
+//   age: 999,
+//   country: "United States",
+//   countryCode: "US",
+// };
+
+// for (const key in person) {
+//   if (Object.hasOwnProperty.call(person, key)) {
+//     const element = person[key];
+//     console.log(element);
+//   }
+// }
+
+// const fruits = ["apple", "banana", "orange"];
+
+// for (const [key, value] of fruits.entries()) {
+//   console.log(key);
+//   console.log(value);
+// }
+
+// for (const fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// console.log(parseInt("10+10"));
+// console.log(parseInt("7bdfdhf"));
+
+// function getMessage() {
+//   throw "Hello world!";
+// }
+
+// function sayHello() {
+//   try {
+//     const data = getMessage();
+//     console.log("Worked: ", data);
+//   } catch (error) {
+//     console.log("An error occurred: ", error);
+//   }
+// }
+
+// sayHello();
+
+// console.log("20" + 30 + 10);
+// console.log(20 + 30 + "10");
+
+// const string = [..."Apple"];
+// console.log(string);
+
+// (() => {
+//   let x, y;
+
+//   try {
+//     throw new Error();
+//   } catch (x) {
+//     (x = 1), (y = 2);
+//     console.log("x", x);
+//   }
+
+//   console.log("x", x);
+//   console.log("y", y);
+// })();
+
+// const numbers = [1, 2, 3];
+// numbers[10] = 11;
+
+// console.log(numbers);
+
+// console.log(typeof typeof 1);
+
+// function sayHi() {
+//   return (() => "Hello")();
+// }
+// console.log(typeof sayHi());
+
+// const language = { name: "React JS" };
+
+// function getLang(version) {
+//   return `${this.name} version ${version}`;
+// }
+
+// console.log(getLang.call(language, 18));
+// console.log(getLang.bind(language, 18));
+// console.log(getLang.apply(language, [18]));
+
+// String.prototype.youAreAmazing = () => {
+//   return "You are amazing";
+// };
+
+// const str = "This is awesome";
+// console.log(str.youAreAmazing());
+
+// for (let i = 1; i < 5; i++) {
+//   if (i === 3) continue;
+
+//   console.log(i);
+// }
+
+// const obj = { a: 1, b: 2, c: 3, d: 4, a: 5, b: 6 };
+// console.log(obj);
+
+// var num = 8;
+// var num = 10;
+
+// console.log(num);
+
+// function getType(...args) {
+//   console.log(typeof args);
+// }
+
+// getType(108, 108, 16);
 
 // function checkAge(data) {
 //   if (data === { age: 18 }) {
