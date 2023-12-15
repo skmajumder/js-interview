@@ -1,13 +1,16 @@
 // * Hoisting
 
-function show() {
-  // * Temporal Dead Zone (TDZ) start for "bestFood"
-  console.log(bestFood); // * Temporal Dead Zone (TDZ) for "bestFood"
-  let bestFood = "Vegetable Fried Rice"; // * Temporal Dead Zone (TDZ) end for "bestFood"
-  // * Temporal Dead Zone (TDZ) not exist for "bestFood"
-}
+// const arrowFn = () => console.log("Inside arrow function");
+// arrowFn();
 
-show();
+// function show() {
+//   // * Temporal Dead Zone (TDZ) start for "bestFood"
+//   console.log(bestFood); // * Temporal Dead Zone (TDZ) for "bestFood"
+//   let bestFood = "Vegetable Fried Rice"; // * Temporal Dead Zone (TDZ) end for "bestFood"
+//   // * Temporal Dead Zone (TDZ) not exist for "bestFood"
+// }
+
+// show();
 
 // test = 9;
 
