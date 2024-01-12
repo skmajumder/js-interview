@@ -18,4 +18,4 @@
 // console.log(pinkBlend);
 // console.log(orangeBlend);
 
-const curryingVar = "Variable from Currying";
+// const curryingVar = "Variable from Currying";

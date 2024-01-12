@@ -1,5 +1,6 @@
 function checkTryBlock() {
   try {
+    // nothing in the block
   } catch (error) {
     return "catch block";
   }

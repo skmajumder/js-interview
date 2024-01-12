@@ -1,3 +1,5 @@
+// 'use strict'
+
 // const num = 70;
 
 // // * old version
@@ -159,10 +161,189 @@
 
 // showData();
 
-for (var i = 0; i < 4; i++) {
-  setTimeout(() => console.log(i), 5);
-}
+// for (var i = 0; i < 4; i++) {
+//   setTimeout(() => console.log(i), 5)
+// }
 
-for (let i = 0; i < 4; i++) {
-  setTimeout(() => console.log(i), 5);
-}
+// for (let i = 0; i < 4; i++) {
+//   setTimeout(() => console.log(i), 5)
+// }
+
+// const income = {
+//   skills: 108,
+//   monthly () {
+//     return this.skills * 108
+//   },
+//   yearly: () => 888 * this.skills
+// }
+
+// console.log(income.monthly())
+// console.log(income.yearly())
+
+// const code = {
+//   type: 'web'
+// }
+
+// const reactJS = {
+//   name: 'JS',
+//   web: true
+// }
+
+// console.log(reactJS[code.type])
+// console.log(reactJS[reactJS['type']])
+
+// const a = { greetings: 'Hi' }
+// const z = a
+
+// z.greetings = 'Hello'
+// console.log(a.greetings)
+
+// let message
+// masage = { data: [24] }
+// console.log(masage)
+
+// function showModal() {
+//   console.log(showModal.timeout)
+// }
+
+// showModal()
+// showModal.timeout = 200
+
+// showModal.timeout = 100
+// showModal()
+
+// function Human(firstName, lastName) {
+//   this.firstName = firstName
+//   this.lastName = lastName
+// }
+
+// const member = new Human('Frontend', 'Master')
+
+// Human.prototype.getFullName = function () {
+//   return this.firstName + ' ' + this.lastName
+// }
+
+// console.log(member.getFullName())
+
+// function Human(firstName, lastName) {
+//   this.firstName = firstName
+//   this.lastName = lastName
+// }
+
+// const MrX = new Human('Mr.', 'X')
+// const Rock = Human('The', 'Rock')
+
+// console.log(MrX)
+// console.log(Rock)
+
+// function mul(a, b) {
+//   return a * b
+// }
+
+// console.log(mul(10, '10'))
+
+// function getSummary(one, two, three) {
+//   console.log(one)
+//   console.log(two)
+//   console.log(three)
+// }
+
+// const fname = 'Vasuki'
+// const age = 878
+
+// getSummary`Hi ${fname} age is ${age} and live in BD`
+
+// function getType (...args) {
+//   console.log(...args)
+//   console.log(typeof args)
+// }
+
+// getType(108)
+
+// var num = 8
+// var num = 10
+
+// console.log(num)
+
+// const obj = { 1: 'a', 2: 'b', 3: 'c', 4: 'd' }
+// const sets = new Set([1, 2, 3, 4])
+
+// console.log(Object.prototype.hasOwnProperty.call(obj, '1'))
+// console.log(Object.prototype.hasOwnProperty.call(obj, 1))
+
+// console.log(sets.has('1'))
+// console.log(sets.has(1))
+
+// let obj = { a: "1", b: "2", c: "3", a: "4" };
+
+// console.log(obj);
+
+// for (let i = 0; i < 8; i++) {
+//   if (i === 3) continue;
+//   console.log(i);
+// }
+
+// function Animal(name) {
+//   this.name = name;
+// }
+
+// Animal.prototype.makeSound = function () {
+//   console.log("Generic Animal Sound");
+// };
+
+// const dog = new Animal("Buddy");
+
+// dog.fetchBuddy = function () {
+//   console.log(`${this.name} is fetching`);
+// };
+
+// dog.fetchBuddy();
+
+// const lang = { name: "React JS" };
+
+// function getLib(ver) {
+//   return `${this.name} version ${ver}`;
+// }
+
+// const bindVer = getLib.bind(lang, 18);
+
+// console.log(getLib.call(lang, 18));
+// console.log(getLib.apply(lang, [18]));
+// console.log(bindVer());
+
+// function sayHi() {
+//   return (() => 0)();
+// }
+
+// console.log(typeof sayHi());
+
+// console.log(typeof typeof 1);
+
+// let numbers = [1, 2, 3];
+// numbers[10] = 11;
+
+// console.log(numbers);
+
+// (() => {
+//   let x, y;
+
+//   try {
+//     throw new Error();
+//   } catch (x) {
+//     (x = 1), (y = 2);
+//     console.log(x);
+//   }
+
+//   console.log(x);
+//   console.log(y);
+// })();
+
+// let x = "global";
+// function example() {
+//   let x = "local";
+//   console.log(x);
+// }
+
+// example();
+// console.log(x);
+
