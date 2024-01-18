@@ -347,3 +347,159 @@
 // example();
 // console.log(x);
 
+// console.log([..."Apple"]);
+// console.log(20 + 30 + "10");
+
+// function getMessage() {
+//   throw "Hello world";
+// }
+
+// function sayHello() {
+//   try {
+//     const data = getMessage();
+//     console.log("worked!", data);
+//   } catch (e) {
+//     console.log("an error occurred:", e);
+//   }
+// }
+
+// sayHello();
+
+// console.log(parseInt("10+2"));
+// console.log(parseInt("7AM"));
+
+// const arr = [1, 2, 3, 4];
+
+// const newArr = arr.map((num) => {
+//   if (num > 0) return;
+
+//   return num * 2;
+// });
+
+// console.log(newArr);
+
+// function getInfo(member, year) {
+//   member.name = "FrontendMaster";
+//   year = "2024";
+// }
+
+// const person = { name: "Dev" };
+// const birthYear = "9999";
+
+// getInfo(person, birthYear);
+
+// console.log(person);
+// console.log(birthYear);
+
+// const Hero = function () {
+//   this.make = "Bhagat Singh";
+//   return { make: "Vivekanand" };
+// };
+
+// const myHero = new Hero();
+// console.log(myHero.make);
+
+// function OuterFunction() {
+//   this.outerValue = 10;
+
+//   // Regular function
+//   this.regularFunction = function () {
+//     setTimeout(function () {
+//       console.log("Regular Function:", this.outerValue);
+//     }, 1000);
+//   };
+
+//   // Arrow function
+//   this.arrowFunction = () => {
+//     setTimeout(() => {
+//       console.log("Arrow Function:", this.outerValue); // Outputs: 10
+//     }, 1000);
+//   };
+// }
+
+// const outerObj = new OuterFunction();
+
+// outerObj.regularFunction();
+// outerObj.arrowFunction();
+
+// (() => {
+//   let x = (y = 10);
+// })();
+
+// console.log(typeof x);
+// console.log(typeof y);
+
+// const obj = { a: "Mr.X", b: 99 };
+// const dat = { c: true, ...obj };
+
+// console.log(dat);
+
+// const obj = { b: "new" };
+
+// Object.defineProperty(obj, "a", { value: "char" });
+// // Object.defineProperty(obj, "a", { value: "char", enumerable: true });
+
+// console.log(obj.a);
+// console.log(Object.keys(obj));
+
+// const box = { x: 10, y: 20 };
+// Object.freeze(box);
+
+// const shape = box;
+// shape.x = 100;
+// shape.y = 20;
+
+// console.log(shape);
+
+// function addItem(item, list) {
+//   return list.push(item);
+// }
+
+// const result = addItem("cat", ["bird", "cow"]);
+// console.log(result);
+
+// const userName = "Mr.X";
+// age = 20;
+
+// console.log(delete userName);
+// console.log(delete age);
+
+// function* generatorFn(i) {
+//   console.log("A");
+//   yield i;
+//   console.log("B");
+//   yield i * 2;
+// }
+
+// const gen = generatorFn(10);
+
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+
+// async function getData() {
+//   return await Promise.resolve("💎");
+// }
+
+// const data = getData();
+// data.then((result) => console.log({ result }));
+
+// const { fName: feDEV } = { fName: "Mr.X" };
+// console.log(feDEV);
+
+// function sum(n1, n2 = n1) {
+//   console.log(n1 + n2);
+// }
+
+// sum(10);
+
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
+
+// const member = new Person("Mr.X");
+// console.log(typeof member);
+
+const newList = [2, 3].push(4);
+console.log(newList);
