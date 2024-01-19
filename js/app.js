@@ -501,5 +501,86 @@
 // const member = new Person("Mr.X");
 // console.log(typeof member);
 
-const newList = [2, 3].push(4);
-console.log(newList);
+// const newList = [2, 3].push(4);
+// console.log(newList);
+
+// function numbers(a, b) {
+//   if (a > b) console.log("a is greater");
+//   else console.log("b is greater");
+//   return;
+//   a + b;
+// }
+
+// console.log(numbers(5, 2));
+// console.log(numbers(4, 5));
+
+// function getItems(list, moreItem, ...args) {
+//   return [...list, ...args, moreItem];
+// }
+
+// console.log(getItems(["berry", "apple"], "pear", "kiwi"));
+
+// class Person {
+//   constructor() {
+//     this.name = "Frontend";
+//   }
+// }
+
+// Person = class AnotherPerson {
+//   constructor() {
+//     this.name = "Master";
+//   }
+// };
+
+// const member = new Person();
+// console.log(member.name);
+
+// const personName = "Happy Day";
+// console.log(personName());
+
+// let personName = "Dev";
+
+// function getName() {
+//   console.log(personName);
+//   let personName = "FrontendMaster";
+// }
+
+// getName();
+
+// * The '||' (logical OR) operator returns the first truthy value or the last falsy value.
+// const one = false || {} || null;
+// const two = null || false || "";
+// const three = [] || 0 || true;
+
+// console.log(one);
+// console.log(two);
+// console.log(three);
+
+// const x = `${((x) => x)("I love")} JS`;
+// console.log(x);
+
+// let num = 1;
+// const list = ["😁", "😎", "🤗"];
+
+// console.log(list[(num += 1)]);
+
+// let randomValue = { name: "Lydia" };
+// randomValue = 23;
+
+// // console.log(typeof typeof randomValue);
+
+// if (!typeof randomValue === "string") {
+//   console.log("It is not a string");
+// } else {
+//   console.log("It is a string");
+// }
+
+// const animals = {};
+// let dog = { emoji: "🐶" };
+// let cat = { emoji: "🐈" };
+
+// animals[dog] = { ...dog, name: "Dug" };
+// animals[cat] = { ...cat, name: "Bux" };
+
+// console.log(animals[dog]);
+
