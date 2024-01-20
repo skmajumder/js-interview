@@ -703,29 +703,46 @@ const person = {
   city: "Zurich",
 };
 
-console.log(person);
-console.log(person.firstName);
+// console.log(person);
+// console.log(person.firstName);
 
-person.age = 900;
-console.log(person);
+// person.age = 900;
+// console.log(person);
 
-console.log("--------");
+// console.log("--------");
 
 const proxyPerson = new Proxy(person, {
   set: function (target, property, value) {
     if (property === "age" && value > 100)
       throw new Error("Age can't be greater than 100");
     target[property] = value;
-    return true;
+
+    // return true;
+    return Reflect.set(target, property, value);
   },
 
-  get: function (target, property) {
+  get: function (target, property, receiver) {
     console.log(property, "is being accessed");
-    return target[property];
+
+    if (property === "allowedToVate") return !!(target.age >= 18);
+    if (property === "fullName")
+      return target.firstName + " " + target.lastName;
+
+    if (!(property in target))
+      throw new ReferenceError("Unknown property: " + property);
+
+    // return target[property];
+    return Reflect.get(target, property, receiver);
   },
 });
 
-proxyPerson.age = 892;
+// console.log(proxyPerson.hello);
+
+// proxyPerson.age = 82;
+// console.log(proxyPerson.allowedToVate);
+// console.log(proxyPerson.fullName);
+
+proxyPerson.age = 82;
 console.log(proxyPerson);
 console.log(proxyPerson.firstName);
 console.log(proxyPerson.city);
