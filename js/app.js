@@ -584,3 +584,148 @@
 
 // console.log(animals[dog]);
 
+// const user = {
+//   email: "user@example.com",
+//   updateEmail: (email) => (this.email = email),
+//   // updateEmail(email) {
+//   //   this.email = email;
+//   // },
+// };
+
+// user.updateEmail("admin@mydomain.com");
+// console.log(user.email);
+
+// const fruit = ["🍌", "🍊", "🍎"];
+
+// fruit.slice(0, 1);
+// fruit.splice(0, 1);
+// fruit.unshift("🍇");
+
+// console.log(fruit);
+
+// let count = 0;
+// const nums = [0, 1, 2, 3];
+
+// nums.forEach((num) => {
+//   if (num) {
+//     count += 1;
+//   }
+// });
+
+// console.log(count);
+
+// nums.map((num) => {
+//   num % 2 === 0 && console.log("Even number", num);
+// });
+
+// const newMapArr = nums.map((num) => {
+//   return num;
+// });
+// console.log(newMapArr);
+
+// nums.forEach((num) => console.log(num));
+
+// const myObject = { a: 1, b: 2, c: 3 };
+
+// Object.entries(myObject).forEach(([key, value]) => {
+//   console.log(key, value);
+// });
+
+// Object.entries(myObject).map(([key, value]) => {
+//   console.log(key, value);
+// });
+
+// Object.keys(myObject).forEach((key) => {
+//   console.log(key, myObject[key]);
+// });
+
+// Object.keys(myObject).map((key) => {
+//   console.log(key, myObject[key]);
+// });
+
+// const person = {
+//   name: "FrontendMaster",
+//   address: {
+//     city: "MDNDocs",
+//   },
+// };
+// Object.freeze(person);
+
+// person.name = null;
+// person.address.city = null;
+
+// console.log(person);
+
+// const person = {
+//   name: "FrontendMaster",
+//   address: {
+//     city: "MDNDocs",
+//   },
+// };
+// Object.seal(person);
+
+// person.name = "BackendMaster";
+// person.skill = "JS";
+
+// delete person.name;
+// delete person.address.city;
+
+// console.log(person);
+
+// const handler = {
+//   set: () => console.log("Added a new property!"),
+//   get: () => console.log("Accessed a new property!"),
+// };
+
+// const person = new Proxy({}, handler);
+
+// person.name = "FrontendMaster";
+// person.name;
+
+// const normalObject = {
+//   property1: "value1",
+//   property2: "value2",
+// };
+
+// const securityGuard = new Proxy(normalObject, {
+//   get: function (target, property) {
+//     console.log(`Accessing ${property}`);
+//     return target[property];
+//   },
+// });
+
+// console.log(securityGuard.property2);
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 100,
+  city: "Zurich",
+};
+
+console.log(person);
+console.log(person.firstName);
+
+person.age = 900;
+console.log(person);
+
+console.log("--------");
+
+const proxyPerson = new Proxy(person, {
+  set: function (target, property, value) {
+    if (property === "age" && value > 100)
+      throw new Error("Age can't be greater than 100");
+    target[property] = value;
+    return true;
+  },
+
+  get: function (target, property) {
+    console.log(property, "is being accessed");
+    return target[property];
+  },
+});
+
+proxyPerson.age = 892;
+console.log(proxyPerson);
+console.log(proxyPerson.firstName);
+console.log(proxyPerson.city);
