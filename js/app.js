@@ -597,8 +597,8 @@
 
 // const fruit = ["🍌", "🍊", "🍎"];
 
-// fruit.slice(0, 1);
-// fruit.splice(0, 1);
+// console.log(fruit.slice(0, 1));
+// fruit.splice(0, 2);
 // fruit.unshift("🍇");
 
 // console.log(fruit);
@@ -765,8 +765,8 @@
 //   console.log(x, y, z);
 // };
 
-// // myFunc(1, 2, 3);
-// myFunc({ x: 1, y: 2, z: 3 });
+// myFunc(1, 2, 3);
+// // myFunc({ x: 1, y: 2, z: 3 });
 
 // const FOO = "FrontendMaster";
 
@@ -778,3 +778,105 @@
 
 // console.log(!typeof FOO == "object");
 // console.log(!typeof FOO == "string");
+
+// function add(x) {
+//   return function (y) {
+//     return function (z) {
+//       console.log(x, y, z);
+//       return x + y + z;
+//     };
+//   };
+// }
+
+// const add = (x) => (y) => (z) => {
+//   console.log(x, y, z);
+//   return x + y + z;
+// };
+
+// console.log(add(10)(20)(30));
+
+// const groceries = ["🍅", "🍇"];
+
+// // console.log(groceries.indexOf("🍅"));
+
+// if (groceries.indexOf("🍅")) {
+//   console.log("We have 🍅");
+// } else {
+//   console.log("We don't have 🍅");
+// }
+
+// const obj = { name: "JS" };
+// obj.itself = obj;
+
+// // const str = JSON.stringify(obj);
+// // console.log(str);
+
+// var magic = 900;
+// function magic() {
+//   console.log("magic");
+// }
+
+// console.log(magic);
+
+// function magic() {
+//   console.log("magic");
+// }
+
+// var magic;
+// magic = 900;
+
+// console.log(magic);
+
+// const array = [{ key: "J" }, "2", "X"];
+// delete array[0];
+
+// console.log(array.length);
+// console.log(array);
+
+// let z = (a = {});
+// // a = {};
+// // z = a;
+// a.name = "JS";
+
+// console.log(z.name);
+
+// function task() {
+//   return new Promise((res) => {
+//     res("data");
+//   });
+// }
+
+// task().then((res) => console.log(res));
+
+// result.then((finalResult) => console.log(finalResult));
+
+// console.log(1);
+
+// new Promise((res) => console.log(2));
+
+// console.log(3);
+
+// const user = {
+//   id: 1,
+//   firstName: "Johnny",
+//   lastName: "English",
+//   email: "johnny@example.com",
+//   password: "pegasus",
+//   address: {
+//     city: "California",
+//   },
+// };
+
+// const { password, ...newUser } = user;
+
+// console.log(newUser);
+
+// const dataMap = new WeakMap();
+// let person = { name: "JS" };
+
+// dataMap.set(person, "TVA");
+
+// console.log(dataMap.get(person));
+// person = null;
+// console.log(dataMap.get(person));
+
