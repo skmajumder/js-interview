@@ -880,3 +880,38 @@
 // person = null;
 // console.log(dataMap.get(person));
 
+// var foo = function () {
+//   console.log("inside test");
+// };
+
+// foo();
+
+// againTest();
+// test();
+
+// var test = function () {
+//   console.log("inside test");
+// };
+
+// function againTest() {
+//   console.log("againTest");
+// }
+
+// const data1 = ["C", "B", "A"];
+// const data2 = ["Z", "Y", "X"];
+
+// data1.toSorted();
+// data2.sort();
+// // const newSorted = data1.toSorted();
+
+// console.log({ data1 });
+// console.log({ data2 });
+
+const num1 = [7, 5, 9, 1, 10, 5, 2];
+const num2 = [10, 5, [1, 2], [2, [3, 5, [1, 2, [9, 3]]]]];
+
+const sortNum1 = num1.toSorted((a, b) => a - b);
+const sortNum2 = num2.flat(Infinity).toSorted((a, b) => a - b);
+
+console.log(sortNum1);
+console.log(sortNum2);
