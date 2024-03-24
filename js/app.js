@@ -907,11 +907,428 @@
 // console.log({ data1 });
 // console.log({ data2 });
 
-const num1 = [7, 5, 9, 1, 10, 5, 2];
-const num2 = [10, 5, [1, 2], [2, [3, 5, [1, 2, [9, 3]]]]];
+// const num1 = [7, 5, 9, 1, 10, 5, 2];
+// const num2 = [10, 5, [1, 1, 6, 2], [2, [10, 3, 5, [1, 2, [9, 3]]]]];
 
-const sortNum1 = num1.toSorted((a, b) => a - b);
-const sortNum2 = num2.flat(Infinity).toSorted((a, b) => a - b);
+// const sortNum1 = num1.toSorted((a, b) => a - b);
+// const sortNum2 = num2.flat(Infinity).toSorted((a, b) => a - b);
 
-console.log(sortNum1);
-console.log(sortNum2);
+// console.log(sortNum1);
+// console.log(sortNum2);
+
+// function task() {
+//   return new Promise((res) => {
+//     res("Data");
+//   });
+// }
+
+// const result = task();
+
+// result.then((data) => console.log(data));
+
+// console.time("async");
+
+// console.log(1);
+// new Promise(() => console.log(2));
+// console.log(3);
+
+// console.timeLog("async");
+
+// const dataMap = new WeakMap();
+// let person = { name: "John" };
+
+// dataMap.set(person, "TVA");
+
+// console.log(dataMap.get(person));
+// person = null;
+// console.log(dataMap.get(person));
+
+// let foo = function test() {
+//   console.log("Inside test");
+// };
+
+// foo();
+
+// const test = function () {
+//   console.log("Inside test");
+// };
+
+// function againTest() {
+//   console.log("againTest test");
+// }
+
+// const data1 = ["C", "B", "A"];
+// const data2 = ["Z", "X", "Y"];
+
+// // * Don't mutate the original array (ECMAScript 23)
+// const sortedData1 = data1.toSorted();
+
+// // * Mutate the original array
+// data2.sort();
+
+// console.log({ sortedData1 });
+// console.log({ data2 });
+
+// const arr = [, , ,];
+
+// console.log(arr.length);
+// console.log(arr);
+
+// const obj = {};
+
+// Object.defineProperty(obj, "a", {
+//   value: "a",
+//   enumerable: true,
+// });
+
+// console.log(obj.a);
+// obj.a = "new value for key a";
+// console.log(obj.a);
+// console.log(Object.keys(obj));
+
+// const box = { x: 10, y: 20 };
+// Object.freeze(box);
+
+// const shape = box;
+
+// shape.x = 100;
+// shape.y = 200;
+// shape.z = 300;
+
+// console.log(shape);
+
+// function addItem(item, list) {
+//   return list.push(item);
+// }
+
+// const result = addItem("item3", ["item1", "item2"]);
+// console.log(result);
+
+// function* generatorFn(i) {
+//   console.log("A");
+//   yield i;
+
+//   console.log("B");
+//   yield i * 10;
+// }
+
+// const gen = generatorFn(10);
+
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+
+// async function getData() {
+//   return await Promise.resolve("resolve");
+// }
+
+// const data = getData();
+// data.then((result) => console.log(result));
+
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
+
+// const member = new Person("MRx");
+// console.log(member.name);
+// console.log(typeof member);
+
+// let newList = [2, 3].push(4);
+// console.log(newList);
+
+// function nums(a, b) {
+//   if (a > b) console.log("a is larger than b");
+//   else console.log("b is larger than a");
+// }
+
+// console.log(nums(4, 2));
+// console.log(nums(1, 2));
+
+// function getItems(list, ...args) {
+//   return [...list, ...args];
+// }
+
+// console.log(getItems(["berry", "apple"], "pear", "kiwi", "knock", "t20"));
+
+// class Person {
+//   constructor() {
+//     this.name = "Frontend";
+//   }
+// }
+
+// Person = class AnotherPerson {
+//   constructor() {
+//     this.name = "Master";
+//   }
+// };
+
+// const person1 = new Person();
+// console.log(person1.name);
+
+// let userName = "Dev";
+
+// function getName() {
+//   console.log(userName);
+//   let userName = "FrontendMaster";
+// }
+
+// getName();
+
+// let userName;
+// userName = "FrontendMaster";
+// console.log(userName);
+
+// const userName;
+// userName = "FrontendMaster";
+// console.log(userName);
+
+// const one = false || {} || null; // {}
+// const two = null || false || ""; // ""
+// const three = [] || 0 || true; // []
+
+// console.log(one);
+// console.log(two);
+// console.log(three);
+
+// console.log(`${((x) => x)("I love")} JS`);
+
+// let num = 1;
+// const list = ["item1", "item2", "item3"];
+
+// console.log(list[(num = num + 1)]);
+
+// let randomValue = { userName: "Lynda" };
+// randomValue = 23;
+
+// if (!typeof randomValue === "string") {
+//   console.log("Not string");
+// } else {
+//   console.log("It is a string");
+// }
+
+// const animals = {};
+
+// const dog = { emoji: "🐶" };
+// const cat = { emoji: "🐱" };
+
+// animals[dog] = { ...dog, name: "Barkalot" };
+// animals[cat] = { ...cat, name: "Mewsalot" };
+
+// console.log(animals[dog]);
+
+// const user = {
+//   email: "user@example.com",
+//   updateEmail: (newEmail) => {
+//     this.email = newEmail;
+//   },
+// };
+
+// user.updateEmail("update@example.com");
+// console.log(user.email);
+
+// console.log(window.email);
+
+// const fruits = ["banana", "orange", "apple", "mango"];
+
+// fruits.slice(0, 1);
+// fruits.splice(0, 1);
+// fruits.unshift("strawberry");
+
+// console.log(fruits);
+
+// const fruit2 = fruits.slice(0, 2);
+// console.log(fruit2);
+
+// const removedItems = fruits.splice(2);
+// console.log(removedItems);
+// console.log(fruits);
+
+// // * The unshift() method, adds one or more elements to the beginning of an array and returns the new length of the array.
+// const newLength = fruits.unshift("grape", "mango");
+// console.log(newLength);
+// console.log(fruits);
+
+// // * The shift() method removes the first element from an array and returns that element.
+// const removedItems = fruits.shift();
+// console.log(removedItems);
+// console.log(fruits);
+
+// // * The push() method, adds one or more elements to the end of an array.
+// const newLength = fruits.push("grape", "mango");
+// console.log(fruits);
+// console.log(newLength);
+
+// // * The pop() method removes the last element from an array and returns that element.
+// const removedItem = fruits.pop();
+
+// console.log(removedItem);
+// console.log(fruits);
+
+// let count = 0;
+// const nums = [0, 1, 2, 3];
+
+// nums.forEach((num) => {
+//   if (num) {
+//     count += 1;
+//   }
+// });
+
+// console.log(count);
+
+// const person = {
+//   personName: "FrontendMaster",
+//   address: {
+//     city: "MDNDocs",
+//   },
+// };
+// Object.freeze(person);
+
+// person.personName = null;
+// person.address.city = null;
+
+// console.log(person);
+
+// const person = {
+//   name: "FrontendMaster",
+//   address: {
+//     city: "CA",
+//   },
+// };
+// Object.seal(person);
+
+// person.name = "BackendMaster";
+// person.skill = "JS";
+// delete person.address.city;
+
+// console.log(person);
+
+// const handler = {
+//   set: () => console.log("Added a new property!"),
+//   get: () => console.log("Accessed a property!"),
+// };
+
+// const person = new Proxy({}, handler);
+// person.name = "FrontendMaster";
+// person.name;
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 99,
+//   city: "Zurich",
+// };
+
+// const proxyPerson = new Proxy(person, {
+//   get: function (target, property) {
+//     console.log(`'${property}' property is being accessed`);
+
+//     if (property === "allowToVote") return !!(target.age >= 18);
+//     if (property === "fullName" || property === "fullname")
+//       return target.firstName + " " + target.lastName;
+//     if (!(property in target))
+//       throw new ReferenceError("Unknown property: " + property);
+
+//     return Reflect.get(target, property);
+//   },
+//   set: function (target, property, value) {
+//     if (property === "age" && value >= 150)
+//       throw new Error("Invalid age limit");
+
+//     target[property] = value;
+
+//     return Reflect.set(target, property, value);
+//   },
+// });
+
+// console.log(proxyPerson.age);
+
+// proxyPerson.age = 16;
+// console.log(proxyPerson.allowToVote);
+// console.log(proxyPerson.fullname);
+
+// console.log((proxyPerson.age = 20));
+// console.log(proxyPerson.age);
+
+// const pets = ["dog", "cat"];
+// ({ item: pets[2] } = { item: "panda" });
+
+// console.log(pets);
+
+// const myFunc = ({ x, y, z }) => {
+//   console.log(x, y, z);
+// };
+
+// myFunc(1, 2, 3);
+
+// const FOO = "FrontendMaster";
+
+// console.log(!typeof FOO == "object");
+// console.log(!typeof FOO == "string");
+
+// const add = (x) => (y) => (z) => {
+//   console.log(x, y, z);
+//   return x + y + z;
+// };
+
+// console.log(add(10)(20)(30));
+
+// const groceries = ["apple", "grape"];
+
+// if (groceries.indexOf("apple")) {
+//   console.log("We have apple");
+// } else {
+//   console.log("We don't have apple");
+// }
+
+// const obj = { name: "JS" };
+// obj.ref = obj;
+
+// const str = JSON.stringify(obj);
+// console.log(str);
+
+// var magic = 100;
+// function magic() {
+//   console.log("magic");
+// }
+
+// console.log(magic);
+
+// const arr = [{ key: "j" }, "2", "x"];
+// delete arr[0];
+
+// console.log(arr.length);
+// console.log(arr);
+
+// let z = (a = {});
+
+// a.name = "JS";
+// console.log(z.name);
+
+// function task() {
+//   return new Promise((res) => {
+//     res("data");
+//   });
+// }
+// const result = task().then();
+
+// console.log(result);
+
+// console.log(1);
+
+// function task() {
+//   new Promise(function () {
+//     console.log(2);
+//   });
+// }
+
+// console.log(3);
+
+const dataMap = new WeakMap();
+let person = { name: "JS" };
+
+dataMap.set(person, "TVA");
+
+console.log(dataMap.get(person));
+person = null;
+console.log(dataMap.get(person));
