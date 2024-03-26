@@ -1324,11 +1324,168 @@
 
 // console.log(3);
 
-const dataMap = new WeakMap();
-let person = { name: "JS" };
+// const dataMap = new WeakMap();
+// let person = { name: "JS" };
 
-dataMap.set(person, "TVA");
+// dataMap.set(person, "TVA");
 
-console.log(dataMap.get(person));
-person = null;
-console.log(dataMap.get(person));
+// console.log(dataMap.get(person));
+// person = null;
+// console.log(dataMap.get(person));
+
+// let foo = function test() {
+//   console.log("inside test");
+// };
+
+// foo();
+
+// const data1 = ["C", "B", "A"];
+// const data2 = ["Z", "Y", "X"];
+
+// const newData1 = data1.toSorted();
+// data2.sort();
+
+// console.log({ newData1 });
+// console.log({ data2 });
+
+// const num = [40, 100, 1, 5, 25, 10];
+// num.sort((a, b) => a - b);
+// // num.sort((a, b) => console.log(`a: ${a}, b: ${b}`));
+
+// console.log(num);
+
+// const arr = [, , ,];
+// console.log(arr);
+// console.log(arr.length);
+
+// let x = 10;
+// let y = "A";
+
+// [x, y] = [y, x];
+
+// console.log({ x, y });
+
+// let x = [typeof x, typeof y];
+// console.log(x);
+
+// const [x, ...y] = [1, 2, 3, 4];
+
+// console.log({ x, y });
+
+// var age = 99;
+// console.log(window.age);
+
+// let name = "JS";
+// name[0] = "R";
+// name[1] = "X";
+
+// console.log(name);
+
+// let str = new String("JS");
+// // let str = String("JS");
+
+// console.log(str === "JS");
+// console.log(str == "JS");
+
+// const obj = {};
+// obj[(obj["A"] = "B")] = "C";
+
+// console.log(obj);
+
+// // * 6 ways to create object in JavaScript
+
+// // * 1. Object Literal
+// const obj = { key: "value", key2: "value2" };
+// console.log(obj);
+
+// // * 2. Constructor Function
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// const person = new Person("Jonas", 99);
+// console.log(person);
+
+// // * 3. Object.create() method:
+// const obj2 = Object.create(null);
+// obj2.name = "Jonas";
+// console.log(obj2);
+
+// // * 4. Using ES6 Classes
+// class Car {
+//   constructor(brand, model) {
+//     this.brand = brand;
+//     this.model = model;
+//   }
+// }
+// const myCar = new Car("Bentley", "Flying Spur");
+// console.log(myCar);
+
+// // * 5. Using Factory Functions
+// function createPerson(name, age) {
+//   return { name, age };
+// }
+
+// const person2 = createPerson("MS Dhoni", 40);
+// console.log(person2);
+
+// // * Using the new Object() constructor
+// const newObj = new Object();
+// newObj.team = "CSK";
+
+// console.log(newObj);
+
+// const arr = [1, 2, 3];
+// console.log(arr[5]);
+
+// const obj = {};
+
+// console.log(obj.key1);
+// console.log(obj.key2);
+
+// const arr = [1, 2, , , 5];
+// console.log(arr);
+// console.log(arr.length);
+
+// function init(x, y, ...z) {}
+
+// function end(a, b = 0, c) {}
+
+// console.log(init.length);
+// console.log(end.length);
+
+// const arr = ["a", "b", "c", "d"];
+// const obj = { ...arr };
+
+// console.log(obj);
+
+// const obj = { a: 1, b: 2, c: 3 };
+// const { a, ...newObj } = obj;
+
+// console.log(a);
+// console.log(newObj);
+
+// const Person = {
+//   language: "JS",
+//   show() {
+//     console.log(`Hi, ${this.language}`);
+//   },
+// };
+
+// const fn = Person.show;
+// fn();
+
+// console.log([] === []);
+// console.log([] == []);
+
+// console.log({} === {});
+// console.log({} == {});
+
+// if (function fn() {}) {
+//   console.log(fn);
+// }
+
+// console.log((99)["toString"].length + 1);
+
+console.log(8 + +"8");
