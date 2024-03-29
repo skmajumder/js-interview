@@ -1488,4 +1488,571 @@
 
 // console.log((99)["toString"].length + 1);
 
-console.log(8 + +"8");
+// console.log(8 + +"8");
+
+// let jsIsAwesome;
+// console.log(typeof jsIsAwesome);
+
+// const data = new Array(10);
+// const len = data.length;
+
+// for (let i = 0; i < len; i++) {
+//   console.log(data[i]);
+// }
+
+// function sum() {
+//   return 2 + 2;
+// }
+
+// function sq() {
+//   return 4 * 4;
+// }
+
+// let a = (sum(), sq());
+// console.log(a);
+
+// const obj = { name: "X" };
+// delete obj.name;
+// obj.name ? (obj.name = "Y") : "";
+
+// console.log(obj);
+
+// let lifeSpan = {
+//   99: "Impressive",
+// };
+// lifeSpan[100] = "🚀";
+
+// console.log({ lifeSpan });
+
+// const arr = ["ab", "cd", "ef"];
+// const str = "abcdef";
+
+// const strMatch = str.includes("a");
+// const arrMatch = arr.includes("a");
+
+// console.log({ strMatch, arrMatch });
+
+// console.log(false == []);
+// console.log(false == ![]);
+
+// console.log([].toString());
+
+// let text = "Hello World!";
+// let result = text.valueOf();
+// console.log(result);
+
+// const obj = { l: 1 };
+// console.log(obj.toString());
+
+// console.log(new Number(12).toString());
+// console.log(123 == new Number(12).toString());
+
+// function test() {
+//   return true;
+// }
+// console.log("true" == test);
+// console.log(test.toString());
+
+// console.log(typeof "123");
+
+// console.log("2023-01-01" == new Date("2023-01-01").toString());
+
+// console.log(new Date("2023-01-01").toString());
+
+// function show() {
+//   {
+//     var x = 9;
+//     var y = 10;
+//   }
+//   console.log(x, y);
+// }
+
+// function show() {
+//   {
+//     (() => {
+//       var x = 9;
+//       var y = 10;
+//     })();
+//   }
+//   console.log(x, y);
+// }
+
+// show();
+
+// console.log("A");
+// (async function () {
+//   const x = await 5;
+//   console.log("C");
+// })();
+// console.log("B");
+
+// console.log("1");
+// async function test() {
+//   const x = await 5;
+//   console.log(x);
+//   console.log("3");
+// }
+// test();
+// console.log("2");
+
+// console.log("X");
+
+// console.log("Y");
+
+// let a = 10;
+// let b = 20;
+
+// let c = 30 - (a = b + 10);
+
+// console.log({ c });
+
+// const arr = [1, 2, 3, 4, 5];
+// // arr = [];
+// // arr.length = 0;
+// // arr.splice(0, arr.length);
+
+// console.log(arr);
+
+// function Superhero() {
+//   this.hero = "Dr. Strange";
+
+//   return { hero: "Thor" };
+// }
+
+// const hero = new Superhero();
+// console.log(hero);
+
+// const obj = {};
+// Object.defineProperty(obj, "lang", { value: "JS", enumerable: true });
+
+// console.log(obj);
+// console.log(obj.lang);
+
+// console.log(-0 == 0);
+// console.log(-0 === 0);
+
+// console.log(Object.is(-0, 0))
+
+// const a = 10;
+// const b = 20;
+// const add = new Function("a", "b", "console.log(a+b)");
+
+// add(a, b);
+
+// const age = 99;
+// const str = "JS";
+// const isValid = true;
+
+// console.log(age.toString());
+// console.log(str.toLowerCase());
+// console.log(isValid.toString());
+
+// const key = "hasOwnProperty";
+// const obj = {};
+
+// if (Object.prototype.hasOwnProperty.call(obj, key)) {
+//   console.log("Key found:", key);
+// } else {
+//   console.log("No key found");
+// }
+
+// if (key in obj) {
+//   console.log("Key found:", key);
+// } else {
+//   console.log("No key found");
+// }
+
+// const str = "The quick brown fox jumps over the lazy dog";
+
+// const countChar = {};
+
+// for (const char of str) {
+//   if (Object.prototype.hasOwnProperty.call(countChar, char)) {
+//     countChar[char] += 1;
+//   } else {
+//     countChar[char] = 1;
+//   }
+// }
+// console.log(countChar);
+
+// const a = 99;
+
+// switch (a) {
+//   case "99":
+//     console.log("==");
+//     break;
+//   case 99:
+//     console.log("===");
+//     break;
+//   default:
+//     console.log("unknown");
+// }
+
+// function check() {
+//   throw new Error("Parameter is required");
+// }
+
+// function getUser(userName = check()) {
+//   console.log(userName);
+// }
+
+// getUser();
+
+// const value = NaN;
+
+// switch (value) {
+//   case NaN:
+//     console.log("This is NaN");
+//     break;
+
+//   default:
+//     console.log("Match failed: " + value);
+// }
+
+// const num1 = Number();
+// const num2 = Number(undefined);
+
+// console.log({ num1 });
+// console.log({ num2 });
+
+// const arr = ["B", "C", "D", "E", "H", "I", "J"];
+
+// console.log(arr.at(-1));
+
+// (function () {
+//   console.log("JS is amazing!");
+// })();
+
+// let flag = 0;
+
+// const id = setInterval(() => {
+//   console.log("Inside setInterval");
+//   console.log(flag++);
+
+//   if (flag >= 5) clearInterval(id);
+// }, 1000);
+
+// function show() {
+//   console.log("Inside show");
+// }
+// const fnName = "show";
+
+// window[fnName]();
+
+// let arr = ["a", "b", "c"];
+// // arr.splice(0, 0, "z");
+// arr = ["z", ...arr];
+
+// console.log(arr);
+
+// const PASS_MARK = 40;
+
+// const students = [
+//   { id: 1, marks: 40 },
+//   { id: 2, marks: 65 },
+//   { id: 3, marks: 80 },
+//   { id: 4, marks: 79 },
+//   { id: 5, marks: 92 },
+// ];
+
+// const allPass = students.every((student) => student.marks >= PASS_MARK);
+
+// console.log({ allPass });
+
+// console.log(+false);
+// console.log(!"JS");
+
+// let age = "51";
+// let validAge = "51";
+
+// age = age + 1;
+// validAge++;
+
+// console.log({ age });
+// console.log({ validAge });
+
+// let num = "JJ";
+// num++;
+// console.log(num);
+
+// let i = 0;
+
+// for (let i = 1; i <= 4; i++) {
+//   console.log("I love programming");
+// }
+
+// console.log(i);
+
+// let i = 0;
+
+// setInterval(() => {
+//   console.log(i++);
+// }, 1000);
+
+// function grateGrandParent() {
+//   console.log("grateGrandParent");
+//   grandParent();
+// }
+
+// function grandParent() {
+//   console.log("grandParent");
+//   parent();
+//   console.trace()
+// }
+
+// function parent() {
+//   console.log("parent");
+//   child();
+// }
+
+// function child() {
+//   console.log("child");
+//   innerChild();
+// }
+
+// function innerChild() {
+//   console.log("innerChild");
+// }
+
+// grateGrandParent();
+
+//* key: 0,1,2,3
+// const arr = [1, 2, 3, 4];
+
+// console.log(0 in arr);
+// console.log(2 in arr);
+// console.log(4 in arr);
+// console.log(5 in arr);
+
+// const arr = [1, 2, 3, 4, 5];
+
+// arr.reduce((acc, nextValue) => {
+//   console.log({ acc });
+//   console.log({ nextValue });
+// });
+
+// const sum = arr.reduce((prev, current) => {
+//   return prev + current;
+// });
+
+// console.log(sum);
+
+// const arr = ["A", "B", "C", "D", "E"];
+// const arr = [1, 2, 3, 4, 5];
+// const obj = {};
+
+// arr.forEach((el, index) => {
+//   obj[index] = el;
+// });
+
+// const obj = arr.reduce((accumulator, currentNumber, currentIndex) => {
+//   accumulator[currentIndex] = currentNumber;
+
+//   return accumulator;
+// }, {});
+
+// console.log(obj);
+
+// console.log(`${{ Object }}`);
+
+// const obj = {};
+// obj.Object = () => {};
+// console.log(obj.toString());
+
+// const show = (b, b) => {};
+
+// function test(a, a) {
+//   console.log(a);
+// }
+
+// test(20);
+// test(20, 10);
+// test(20, 10, 30);
+
+// const a = { fn: function () {} };
+// const b = [function () {}];
+
+// const strA = JSON.stringify(a);
+// const strB = JSON.stringify(b);
+
+// console.log(strA);
+// console.log(strB);
+
+// const list = "apple,samsung;google";
+// const devices = list.split(/[,;]/);
+
+// console.log(devices);
+// console.log(list);
+
+// const fileNames = [
+//   "app.js",
+//   "app.ts",
+//   "index.php",
+//   "query.sql",
+//   "string.java",
+//   "ml.py",
+// ];
+// const filteredFiles = [];
+
+// fileNames.map((fileName) => {
+//   const parts = fileName.split(/[.]/);
+//   const fileExtension = parts[parts.length - 1];
+//   if (fileExtension === "js" || fileExtension === "ts") {
+//     filteredFiles.push(fileName);
+//   }
+// });
+
+// console.log(filteredFiles);
+
+// console.log("" == []);
+// console.log(false == []);
+
+// function test() {
+//   console.log(typeof this);
+// }
+// test.call("");
+// console.log(typeof this);
+
+// function getFruit(input) {
+//   switch (input) {
+//     case "orange": {
+//       const color = "orange";
+//       console.log(color);
+//       break;
+//     }
+//     case "mango": {
+//       const color = "mango";
+//       console.log(color);
+//       break;
+//     }
+//     default:
+//       console.log("no color");
+//   }
+// }
+
+// getFruit("mango");
+
+// const mySet = new Set([1, 2, 3, 1, 2, 3]);
+
+// const way1 = [...mySet];
+// const way2 = Array.from(mySet);
+// const way3 = new Array(...mySet);
+
+// console.log({ way1 });
+// console.log({ way2 });
+// console.log({ way3 });
+
+// const numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5];
+
+// const uniqueArr = [...new Set(numbers)];
+// console.log(uniqueArr);
+
+// const arr = Array.from([1, 2, 3, 4], (x) => x + x);
+// console.log(arr);
+
+// const Obj = {};
+
+// const set1 = new Set();
+// const set2 = new Set();
+
+// set1.add(Obj);
+// set1.add(Obj);
+
+// set2.add({});
+// set2.add({});
+
+// console.log(set1.size);
+// console.log(set2.size);
+
+// let str = "JS";
+// console.log(JSON.stringify(str) === str);
+
+// function check(...args) {
+//   for (const item of args) {
+//     if (typeof item !== "number") {
+//       throw new Error("Invalid number: " + item);
+//     }
+//   }
+// }
+
+// function add(n1, n2) {
+//   check(n1, n2);
+//   return n1 + n2;
+// }
+
+// console.log(add(60, 20));
+// console.log(add("a", 20));
+// console.log(add(null, 20));
+// console.log(add(undefined, 20));
+// console.log(add(true, 20));
+// console.log(add({}, 20));
+// console.log(add([], 20));
+
+// console.log([...[..."..."]].length);
+// console.log([...[".", ".", "."]].length);
+
+// console.log(1 + undefined);
+// console.log(1 + typeof c);
+
+// let num = -9;
+
+// // if (num < 0) {
+// //   num = num * -1;
+// // }
+
+// num = Math.abs(num);
+
+// console.log(num);
+
+// function test() {
+//   rrr();
+
+//   function rrr() {
+//     console.log("a");
+//   }
+
+//   rrr();
+//   function rrr() {
+//     console.log("b");
+//   }
+
+//   rrr();
+// }
+
+// test();
+
+// console.log(2 + "2");
+// console.log(2 - "2");
+// console.log(2 * "2");
+// console.log(2 / "2");
+// console.log(2 % "2");
+
+// console.log(0o1);
+
+// console.log(01);
+// console.log(String(01));
+
+// let num = 2;
+
+// // console.log(num--);
+// // console.log(num)
+// // // console.log(num--);
+
+// let foo = !--num;
+// let bar = !--num;
+
+// console.log({ foo });
+// console.log({ bar });
+
+// (function () {
+//   console.log("IIFE");
+// })();
+
+// +(function () {
+//   console.log("IIFE");
+// })();
+
+// !(function () {
+//   console.log("IIFE");
+// })();
+
