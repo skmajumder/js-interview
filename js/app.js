@@ -2056,3 +2056,392 @@
 //   console.log("IIFE");
 // })();
 
+// const arr = Array.from(["f", "o", "0"], (x) => x);
+// const arr = Array.from("foo", (x) => x);
+// console.log(arr);
+
+// const mySet = new Set(["foo", "bar", "baz", "foo"]);
+// // const newArr = [...mySet];
+// const newArr = Array.from(mySet, (x) => x);
+
+// console.log(newArr);
+
+// Array.from({ length: 5 }, (_, i) => console.log(i));
+// const arrayLike = { a: "1", b: "2", length: 2 };
+// const newArr = Array.from(arrayLike);
+
+// console.log(newArr);
+
+// const newArr = Array.from({ length: 5 }, () => input);
+// const newArr = Array(5).fill(input).join("");
+
+// console.log("JS".repeat(5));
+
+// let text = "Helloworld!";
+// let result = text.repeat(4);
+
+// console.log(result);
+
+// function show() {
+//   console.log("JS");
+// }
+
+// new show();
+
+// const test = new Function("", "console.log('ExampleJS')");
+// new test
+
+// const magicObject = {
+//   value: 1,
+//   get a() {
+//     return this.value++;
+//   },
+// };
+
+// console.log(magicObject.a);
+// console.log(magicObject.a);
+// console.log(magicObject.a);
+
+// const obj = {
+//   _name: "",
+
+//   get name() {
+//     return this._name;
+//   },
+
+//   set name(input) {
+//     this._name = input;
+//   },
+// };
+
+// obj.name = "Jonathan";
+// console.log(obj._name);
+// console.log(obj.name);
+
+// const { a, ...rest } = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+
+// const {
+//   a = "default",
+//   b = "default",
+//   c = "default",
+//   d = "default",
+//   e = "default",
+// } = {
+//   a: null,
+//   b: undefined,
+//   c: false,
+//   d: 0,
+// };
+
+// console.log({ a, b, c, d, e });
+
+// const array1 = [1, 30, 39, null, undefined, true, 29, 10, 13];
+// const array1 = [1, 30, 39, , , , 29, 10, 13];
+// const array1 = [1, 30, 39, 29, 10, 13];
+
+// console.log(array1.every((x) => x >= 1));
+
+// const survey = [
+//   { name: "Steve", answer: "Yes" },
+//   { name: "Jessica", answer: "Yes" },
+//   { name: "Peter", answer: "No" },
+//   { name: "Elaine", answer: "Yes" },
+// ];
+
+// const result = survey.every((element, index, array) => {
+//   if (index === 0) return true;
+//   else {
+//     return element.answer === array[index - 1].answer;
+//   }
+// });
+
+// console.log(result);
+
+// console.log(Object.keys(survey));
+
+// const result = survey.every((el) => el.answer === "Yes");
+
+// console.log(result);
+
+// console.log(Person);
+// class Person {}
+
+// notHoisted()
+
+// class Rectangle {
+//   #area = 0;
+
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+// }
+
+// const ret1 = new Rectangle(10, 20);
+// console.log(ret1.calcArea());
+
+// console.log(null == undefined);
+// console.log(NaN != 0);
+
+// console.log(null > 0);
+// console.log(null >= 0);
+
+// console.log(null < 0);
+// console.log(null <= 0);
+
+// const var1 = 1,
+//   var2 = 2;
+
+// const var3 = var4 = 1;
+
+// console.log(var1);
+// console.log(var2);
+
+// console.log("-----");
+
+// console.log(var3);
+// console.log(var4);
+
+// const obj = {
+//   show: function () {
+//     console.log("JS");
+//   },
+// };
+
+// const obj = {
+//   get show() {
+//     return "JS";
+//   },
+// };
+
+// // obj.show``
+// // new obj.show;
+// console.log(obj.show);
+
+// console.log(typeof new String(""));
+// console.log(typeof String(""));
+
+// function stringFn(value) {
+//   if (new.target) return new String(value);
+//   else return String(value);
+// }
+
+// console.log(typeof new stringFn(""));
+// console.log(typeof stringFn(""));
+
+// localStorage.setItem("password", false);
+
+// const password = JSON.parse(localStorage.getItem("password"));
+
+// if (password) {
+//   console.log("Password is set");
+// } else {
+//   console.log("Password is not set");
+// }
+
+// const ageArr = [
+//   { name: "A", age: 10 },
+//   { name: "B", age: 60 },
+//   { name: "C", age: 50 },
+//   { name: "D", age: 70 },
+//   { name: "E", age: 20 },
+// ];
+
+// ageArr.sort((a, b) => a.age - b.age);
+// console.log(ageArr);
+
+// ageArr.sort((a, b) => {
+//   if (a.age < b.age) {
+//     return -1;
+//   } else if (a.age > b.age) {
+//     return 0;
+//   }
+
+//   return 0;
+// });
+
+// const numArr = [2, 6, 3, 5, 1, 0, 9, 22, 54, 55];
+
+// console.log(numArr.filter((x) => x % 2 === 0).map((x) => Math.pow(x, 2)));
+
+// // * Flat Map (Filter() + map())
+// console.log(numArr.flatMap((x) => (x % 2 === 0 ? Math.pow(x, 2) : [])));
+
+// const obj = { name: "JS", lib: "Reacct" };
+// const numArr = [2, 6, 3, 5, 1, 0, 9, 22, 54, 55];
+
+// const keys = Object.keys(numArr);
+// console.log(keys);
+
+// for (const [key, value] of numArr.entries()) {
+//   console.log({ key });
+//   console.log({ value });
+// }
+
+// const game = {
+//   team1: "Bayern Munich",
+//   team2: "Borrussia Dortmund",
+//   players: [
+//     [
+//       "Neuer",
+//       "Pavard",
+//       "Martinez",
+//       "Alaba",
+//       "Davies",
+//       "Kimmich",
+//       "Goretzka",
+//       "Coman",
+//       "Muller",
+//       "Gnarby",
+//       "Lewandowski",
+//     ],
+//     [
+//       "Burki",
+//       "Schulz",
+//       "Hummels",
+//       "Akanji",
+//       "Hakimi",
+//       "Weigl",
+//       "Witsel",
+//       "Hazard",
+//       "Brandt",
+//       "Sancho",
+//       "Gotze",
+//     ],
+//   ],
+//   score: "4:0",
+//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+//   date: "Nov 9th, 2037",
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
+
+// for (const [key, value] of Object.entries(game)) {
+//   if (Object.hasOwnProperty.call(game, key)) {
+//     console.log({key});
+//     console.log({value});
+//   }
+// }
+
+// let isValid = false;
+// console.log(isValid.randomkey);
+
+// function sum(num1) {
+//   return (num2) => {
+//     if (num2 === undefined) return num1;
+//     else return sum(num1 + num2);
+//   };
+// }
+
+// const result = sum(3)();
+
+// console.log(result);
+
+// console.log((1).awesome);
+// console.log((1).awesome);
+
+// const num = 2;
+// console.log(num.awesome);
+
+// if ([]) {
+//   console.log("Tea");
+// }
+
+// if ([] == false) {
+//   console.log("biscuit");
+// } else {
+//   console.log("Pizza");
+// }
+
+// function test() {
+//   return foo;
+//   console.log("YO");
+//   foo = 10;
+//     function foo() {}
+//   var foo = 11;
+// }
+
+// console.log(test());
+// console.log(typeof test());
+
+// const name = "JS";
+// const lib = "React";
+
+// function show(a, b, c) {
+//   console.log("a=", a);
+//   console.log("b=", b);
+//   console.log("c=", c);
+// }
+
+// show`Hey ${name}, welcome. Hello ${lib} are you.`;
+
+// const obj = { key: "value" };
+
+// // const { key, key: var1 } = obj;
+// const { key: var1, key: var2 } = obj;
+
+// console.log(var1);
+// console.log(var2);
+
+// console.log((10, 20, 30, 40, 50));
+
+// function isPass() {
+//   console.log("inside pass");
+//   return "pass";
+// }
+
+// function isTopper() {
+//   console.log("inside topper");
+//   return "topper";
+// }
+
+// const result = isPass() || isTopper();
+// console.log(result);
+
+// console.log([43, 31] > [2]);
+// console.log([3] > [720]);
+
+// console.log([43, 31].toString());
+
+// const num = 21;
+
+// console.log(num.toString());
+// console.log(num.toString(2));
+// console.log(num.toString(8));
+// console.log(num.toString(10));
+// console.log(num.toString(16));
+
+// const obj = Object.create(null);
+// const obj = new Object();
+// console.log(obj);
+
+// function testFn() {
+//   console.log("inside testFn");
+// }
+
+// console.log(testFn.name);
+// arandomVariable = "JS is 💓";
+// console.log(arandomVariable);
+
+const str = "Hey JS! You R AMAZING";
+const vowels = ["a", "e", "i", "o", "u"];
+
+function countVowel(text) {
+  const strArr = text.toLowerCase().split("");
+  let flag = 0;
+
+  strArr.forEach((char) => {
+    vowels.includes(char) && flag++;
+  });
+  return flag;
+}
+
+const numOfVowels = countVowel(str);
+console.log(numOfVowels);
