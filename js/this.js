@@ -73,6 +73,22 @@
 // sakib.printName();
 // sakib.father.printName();
 
+// * explicit binding - call & apply. call() only take one argument, when apply() take an array of arguments
+
+function printPlayerName(nationality, quality) {
+  console.log(`${this.name} is a ${nationality}, ${quality} cricket player`);
+}
+
+const sakib = {
+  name: "Sakib",
+  age: 35,
+};
+
+const quality = "All Rounder";
+const nationality = "Bangladeshi";
+
+printPlayerName.apply(sakib, [nationality, quality]);
+
 // * https://www.youtube.com/watch?v=-owpuf4lbyU
 
 // * Call
