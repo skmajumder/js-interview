@@ -2430,18 +2430,18 @@
 // arandomVariable = "JS is 💓";
 // console.log(arandomVariable);
 
-const str = "Hey JS! You R AMAZING";
-const vowels = ["a", "e", "i", "o", "u"];
+// const str = "Hey JS! You R AMAZING";
+// const vowels = ["a", "e", "i", "o", "u"];
 
-function countVowel(text) {
-  const strArr = text.toLowerCase().split("");
-  let flag = 0;
+// function countVowel(text) {
+//   const strArr = text.toLowerCase().split("");
+//   let flag = 0;
 
-  strArr.forEach((char) => {
-    vowels.includes(char) && flag++;
-  });
-  return flag;
-}
+//   strArr.forEach((char) => {
+//     vowels.includes(char) && flag++;
+//   });
+//   return flag;
+// }
 
-const numOfVowels = countVowel(str);
-console.log(numOfVowels);
+// const numOfVowels = countVowel(str);
+// console.log(numOfVowels);
